@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Oracle Cloud Migration Factory</title>
+
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: left;
+        }
+        .header img {
+            max-width: 150px;
+            vertical-align: middle;
+            margin-right: 20px;
+        }
+        .header h1 {
+            display: inline-block;
+            margin: 0;
+            vertical-align: middle;
+			        }
+        .nav {
+            background-color: #eee;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+        .nav a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .nav .logo-container {
+            margin-right: auto;
+            display: flex;
+            align-items: center;
+        }
+        .nav .logo-container img {
+            max-width: 120px;
+            margin-right: 10px;
+        }
+        .container {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .left-content {
+            flex: 1 1 300px;
+            padding: 20px;
+        }
+        .right-content {
+            flex: 1 1 500px;
+            padding: 10px;
+            text-align: center;
+        }
+        .image-map {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+        }
+        .image-map img {
+            width: 100%;
+            height: auto;
+        }
+        .services-section {
+            padding: 20px;
+        }
+        .services-section .service {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+        .services-section .service-text {
+            flex: 1;
+            min-width: 300px;
+        }
+        .services-section .service-image {
+            flex: 1;
+            min-width: 300px;
+            text-align: center; /* Center images within the container */
+            display: flex;      /* Use flexbox for vertical centering */
+            align-items: center; /* Vertically center the image */
+            justify-content: center; /* Horizontally center the image */
+        }
+        .services-section .service-image img {
+            max-width: 100%;
+            height: auto;
+            max-height: 300px; /* Set a maximum height */
+            object-fit: contain; /* Maintain aspect ratio and contain within max height */
+        }
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        .bottom-links {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .bottom-links a {
+            margin: 0 10px;
+            color: #007BFF;
+            text-decoration: none;
+        }
+    .video-container {
+            width: 100%;
+            max-width: 600px; /* Adjust as needed */
+            margin: 0 auto; /* Center the video */
+            margin-bottom: 20px; /* Space below the video */
+        }
+        .video-container video {
+            width: 100%;
+            height: auto;
+        }
+	.image-container {
+            position: relative; /* Needed for absolute positioning of the button */
+            width: 100%;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .image-container img {
+            width: 100%;
+            height: auto;
+            display: block; /* Prevents a small space below the image */
+        }
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%); /* Center the button */
+            background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+            border: none;
+            color: white;
+            padding: 15px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px; /* Rounded corners */
+        }
+        .play-button:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .video-container {
+            display: none; /* Initially hidden */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent backdrop */
+            z-index: 1000; /* Ensure it's on top */
+            justify-content: center; /* Center video horizontally */
+            align-items: center; /* Center video vertically */
+        }
+        .video-container video {
+            max-width: 80%; /* Adjust as needed */
+            max-height: 80%; /* Adjust as needed */
+        }
+        .close-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+		.h1 {
+  color: #C00000; /* Oracle Red or your desired color */
+}
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1 style="display: none;">Global Services Center</h1>
+    </div>
+    <div class="nav">
+        <div class="logo-container">
+            <img src="C:\Users\Ganapathi Thyagaraju\Documents\$User\OFF\Oracle\Cloud Infra & Platform\Migration Factory\MF Landing page\images\GSC.png" alt="Oracle Logo">
+        </div>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Tools</a>
+        <a href="#">Contact Us</a>
+    </div>
+    <div class="container">
+        <div class="left-content">
+            
+			<h1 style="color: #C00000;">Cloud Migration Factory</h1>
+           <ul style="font-size: 16px;">
+		   <p style="font-size: 20px;">Migration Factory enables <strong>Smarter, Faster, Better & Cheaper</strong> Migrations at scale</p>
+    <li>Reduce Time & Effort with Automation & Parallelism</li>
+    <li>Improve Quality & Efficiency with Standardization</li>
+	 <li>Migrate to Public Cloud, Cloud @ customer, Multi cloud & Hybrid cloud combinations</li>
+	 <li>Migrate groups of workloads or complete datacenters</li>
+
+			</ul>
+        </div>
+   <div class="right-content">
+             <video width="400" height="350" controls poster="C:\Users\Ganapathi Thyagaraju\Documents\$User\OFF\Oracle\Cloud Infra & Platform\Migration Factory\MF Landing page\images\MF.png">
+        <source src="C:\Users\Ganapathi Thyagaraju\Documents\$User\OFF\Oracle\Cloud Infra & Platform\Migration Factory\MF Landing page\videos\GSC_MF.mp4"
+            type="video/mp4">
+    </video>
+            
+    </div>
+	
+    <div class="services-section">
+        <h2>Our Services</h2>
+		<div class="service">
+            <div class="service-image">
+			                   <video width="400" height="350" controls poster="C:\Users\Ganapathi Thyagaraju\Documents\$User\OFF\Oracle\Cloud Infra & Platform\Migration Factory\MF Landing page\images\CASF.jpg">
+        <source src="C:\Users\Ganapathi Thyagaraju\Documents\$User\OFF\Oracle\Cloud Infra & Platform\Migration Factory\MF Landing page\videos\GSC_CASF.mp4"
+            type="video/mp4">
+    </video>
+            </div>
+            <div class="service-text">
+                <h2>Cloud Architecture & Security Framework </h2>
+                <p style="font-size: 20px;">CASF includes set of best practices to help create Enterprise Grade Cloud Architectures which has been consistently leveraged across all the Architecture Engagements.</p>
+                <p style="font-size: 20px;">CASF consists of 5 Pillars which is built on principles of Availability, Scalability, Performance, Security, Observability and Management and deployed with Automation (IaC) and DevOps.</p>
+            </div>
+        </div>
+        <div class="service">
+            <div class="service-text">
+                <p style="font-size: 23px;"><h2>Migration Assessment & Planning</h2></p>
+                <p style="font-size: 20px;">Migration Assessment & Planning Solution helps define a clear migration strategy, eliminating guesswork.</p>
+                <ul style="font-size: 16px;">
+                    <li>Facilitates large-scale migrations and data center exit programs</li>
+                    <li>Offers a structured and prescriptive approach to Cloud Migration Assessment & Planning, removing uncertainties.</li>
+                    <li>Simplifies and accelerates migration assessment and planning using automation and best practices</li>
+                    <li>Promotes a collaborative approach by engaging closely with customer stakeholders and application owners</li>
+                    <li>Delivers comprehensive application migration analysis and planning</li>
+                </ul>
+            </div>
+            <div class="service-image">
+                        <video width="400" height="350" controls poster="C:\Users\Ganapathi Thyagaraju\Documents\$User\OFF\Oracle\Cloud Infra & Platform\Migration Factory\MF Landing page\images\MAP.jpg">
+        <source src="C:\Users\Ganapathi Thyagaraju\Documents\$User\OFF\Oracle\Cloud Infra & Platform\Migration Factory\MF Landing page\videos\GSC_MAP.mp4"
+            type="video/mp4">
+    </video>
+            
+            </div>
+        </div>
+        <div class="service">
+            <div class="service-image">
+			                   <video width="400" height="350" controls poster="C:\Users\Ganapathi Thyagaraju\Documents\$User\OFF\Oracle\Cloud Infra & Platform\Migration Factory\MF Landing page\images\VM.png">
+        <source src="C:\Users\Ganapathi Thyagaraju\Documents\$User\OFF\Oracle\Cloud Infra & Platform\Migration Factory\MF Landing page\videos\GSC_VM.mp4"
+            type="video/mp4">
+    </video>
+            </div>
+            <div class="service-text">
+                <h2>Tech Workload / Virtual Machine migration</h2>
+                <p style="font-size: 20px;">Migration Factory brings the required skills, methodologies, and tools to help you develop target state architecture and transformation roadmap, and to implement the migration of your desired infrastructure.</p>
+                <p style="font-size: 16px;"><strong>VMWare Migration</strong> - For anyone looking to discover, design and migrate on-premises VMWare workloads to public cloud VMware environments.</p>
+            </div>
+        </div>
+        <div class="service">
+            <div class="service-text">
+                <h2>Database migration</h2>
+                <p style="font-size: 20px;">Migration Factory helps customers migrate their complex databases onto new servers or to re-platform them to different platforms while mitigating the high risks of business disruption associated with a database migration. We can help you adopt database services on cloud platforms, including AWS, Azure, and Google Cloud, and consolidate your database servers to optimize your resource utilization and performance.</p>
+			            </div>
+            <div class="service-image">
+			  <div class="service-image">
+			                   <video width="400" height="350" controls poster="C:\Users\Ganapathi Thyagaraju\Documents\$User\OFF\Oracle\Cloud Infra & Platform\Migration Factory\MF Landing page\images\DB.png">
+        <source src="C:\Users\Ganapathi Thyagaraju\Documents\$User\OFF\Oracle\Cloud Infra & Platform\Migration Factory\MF Landing page\videos\GSC_DB.mp4"
+            type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <div class="service">
+            <div class="service-image">  <video width="400" height="350" controls poster="C:\Users\Ganapathi Thyagaraju\Documents\$User\OFF\Oracle\Cloud Infra & Platform\Migration Factory\MF Landing page\images\MW.png">
+        <source src="C:\Users\Ganapathi Thyagaraju\Documents\$User\OFF\Oracle\Cloud Infra & Platform\Migration Factory\MF Landing page\videos\GSC_MW.mp4"
+            type="video/mp4">
+              </video>
+            </div>
+            <div class="service-text">
+                <h2>Middleware migration</h2>
+                <p style="font-size: 20px;">Migration Factory helps to migrate Oracle Middleware Workloads (WebLogic, IDAM, SOA Suite, WebCenter Suites, Forms/Reports) to the Oracle Cloud.</p>
+					<ul style="font-size: 16px;">
+                    <li>Re-platforming Middleware to Oracle Cloud can streamline operations, improve performance, and enable organizations to leverage the full potential of cloud-native services</li>
+                    <li>Ensure a safe and efficient transition to the target infrastructures by adhering to processes and using specified assets/tools while adhering to regulations</li>
+                                    </ul>
+            </div>
+        </div>
+        <div class="service">
+            <div class="service-text">
+                <h2>Application migration</h2>
+                 <p style="font-size: 20px;">Migrate Oracle Packaged Applications to the Oracle Cloud leveraging Automation & Engineered Processes</p>
+				 <ul style="font-size: 16px;">
+                    <li>Covers EBS, Peoplesoft, JDE, Siebel, Hyperion, BI</li>
+                    <li>Service includes Fresh Provisioning, Upgrades, Non-Prod & Production</li>
+					<li>Service delivered with Engineered Processes & Automation Tooling</li>
+                                    </ul>
+            </div>
+            <div class="service-image">
+				                   <video width="400" height="350" controls poster="C:\Users\Ganapathi Thyagaraju\Documents\$User\OFF\Oracle\Cloud Infra & Platform\Migration Factory\MF Landing page\images\Apps.png">
+        <source src="C:\Users\Ganapathi Thyagaraju\Documents\$User\OFF\Oracle\Cloud Infra & Platform\Migration Factory\MF Landing page\videos\GSC_Apps.mp4"
+            type="video/mp4">
+              </video>
+            </div>
+        </div>
+    </div>
+	 <h2>Tools</h2><br>
+		<div class="service">
+            <div class="service-image">
+			                   <video width="400" height="350" controls poster="C:\Users\Ganapathi Thyagaraju\Documents\$User\OFF\Oracle\Cloud Infra & Platform\Migration Factory\MF Landing page\images\Orascout.png">
+        <source src="C:\Users\Ganapathi Thyagaraju\Documents\$User\OFF\Oracle\Cloud Infra & Platform\Migration Factory\MF Landing page\videos\GSC_ Orascout.mp4"
+            type="video/mp4">
+    </video>
+            </div>
+            <div class="service-text">
+                <h2>OraScout</h2>
+                <p style="font-size: 20px;">OraScout is an in-house discovery tool which streamlines the discovery and inventory of infrastructure resources across network ranges. OraScout provides valuable insights into the hosts, operating systems, installed software, and databases present in your network environment.</p>
+            </div>
+        </div>
+        <div class="service">
+            <div class="service-text">
+                <p style="font-size: 23px;"><h2>Migration Planning Workbench</h2></p>
+                <p style="font-size: 20px;">Migration Planning Workbench (a.k.a MPW) is an in-house Migration Assessment & Planning tool.  Migration Planning Workbench makes Migration Analysis, Design & Planning faster and Easier.</p>
+                </div>
+			       <div class="service-image">
+                        <video width="400" height="350" controls poster="C:\Users\Ganapathi Thyagaraju\Documents\$User\OFF\Oracle\Cloud Infra & Platform\Migration Factory\MF Landing page\images\MPW.jpg">
+        <source src="C:\Users\Ganapathi Thyagaraju\Documents\$User\OFF\Oracle\Cloud Infra & Platform\Migration Factory\MF Landing page\videos\GSC_MPW.mp4"
+            type="video/mp4">
+    </video>
+            
+            </div>
+        </div>
+    <div class="bottom-links">
+        <p>Looking for something specific?</p>
+        <a href="#">GSC Home</a> |
+        <a href="#">Contacts</a>
+    </div>
+   </body>
+</html>
